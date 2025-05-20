@@ -854,10 +854,34 @@ header ul li a:hover{
   margin-right: 10px;
 }
 
-.social-icons a {
-  color: white;
+ .social-icons {
+  display: flex;
+  color: #1665cb;
   margin-top: 40px;
+  gap: 40px;
+}
+.social-icons a i{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid #1665cb;
+  text-decoration: none;
+  color: rgb(13, 1, 1);
+  border-radius: 50%;
   transition: 0.3s;
+
+  transition: 0.3s;
+}
+.social-icons a i:hover {
+  background-color: #db790ae0;
+  border: 2px solid #db790ae0;
+  color: white;
+  box-shadow: 0 0 15px #db790ae0;
 }
 
 .contact-box p {
@@ -1124,253 +1148,7 @@ footer h1 {
 }
 
 /*-------------------------------------------------------- MOBILE RESPONSIVE PASS --------------------------------------------------------*/
-/* @media screen and (max-width: 700px) and (min-width:480px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    gap: 0;
-    position: fixed;
-    height: 30px;
-  }
 
-  header ul{
-    display: flex;
-    width: 80%;
-    height: 20px;
-  }
-
-  .box-icons{
-    display: none;
-  }
-
-  header h1 {
-    font-size: 25px;
-  }
-
-  .hero {
-    flex-direction: column;
-  }
-
-  .autoBlur {
-    animation: none;
-  }
-
-  .hero-info {
-    flex-direction: column;
-    bottom: 5%;
-  }
-
-  .scroll-down {
-    bottom: 5%;
-  }
-
-  .hero-info h1 {
-    position: relative;
-    font-size: 40px;
-    margin-top: -400px;
-    margin-left: 40px ;
-  }
-  .hero-info h1:nth-child(2){
-    position: absolute;
-    font-size: 40px;
-    margin-top: -460px;
-    margin-left: 40px ;
-  }
-  .hero-p {
-    position: absolute;
-    font-size: 14px;
-    margin-top: -15px;
-    margin-left: 40px ;
-  }
-  .hero-info-title {
-    font-size: 14px;
-    position: absolute;
-    margin-top: -510px;
-    margin-left: 40px ;
-  }
-  .hero-info a {
-    position: absolute;
-    bottom: 14%;
-    margin-left: 32px ;
-  }
-
-.hero-vid-box {
-    height: 480px;
-    top: 8%;
-    right: 5%;
-  }
-  .hero-vid-box video {
-    position: relative;
-    height: 280px;
-  }
-
-  .scroll-down{
-    left: 60%;
-  }
-  .info-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin-top: 100px;
-}
-.section-title {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.info-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
-}
-
-  .cards-img {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-  }
-
-  .cards h1 {
-    position: absolute;
-    font-size: 18px;
-  }
-
-  .cards p {
-    position: absolute;
-    font-size: 13px;
-  }
-  .cards video {
-    width: 100%;
-    height: 50%;
-  }
-
-  .cards video {
-    width: 100%;
-  }
-
-  .inner-pro h2{
-    font-size: large;
-  }
-
-  .my-projects {
-    margin-bottom: 400px;
-  }
-
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    gap: -150px;
-  }
-
-  .project-info {
-    width: 85%;
-  }
-
-  .project-info h1 {
-    margin-top: 30px;
-    text-wrap: nowrap;
-    font-size: medium;
-  }
-
-  .project-info p {
-    max-width: 300px;
-  }
-  .project-info button {
-    position: relative;
-    top: -20px;
-    left: 69px;
-  }
-
-  .skills-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.skills-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.skill-card:nth-child(1) h1 {
-  font-size: 18px;
-}
-.skill-card:nth-child(2) h1 {
-  font-size: 18px;
-}
-.skill-card:nth-child(3) h1 {
-  font-size: 18px;
-}
-.skill-card:nth-child(1) p {
-  font-size: 11px;
-}
-.skill-card:nth-child(2) p {
-  font-size: 11px;
-}
-.skill-card:nth-child(3) p {
-  font-size: 11px;
-}
-
-
-
-  .slider {
-    top: 60%;
-  }
-
-  .slider img {
-    width: 80%;
-  }
-
-  .slider .list .items img {
-  width: 60px;
-  height: 60px;
-}
-
-  .contact-section {
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-
-  .contact-section .section-title {
-    top: -80px;
-    left: 25%;
-  }
-
-  footer {
-    height: 50px;
-  }
-
-  footer h1 {
-    font-size: 12px;
-  }
-
-  .project-vidbox {
-    min-width: 200px;
-  }
-
-  .desiner h1 {
-    font-size: 25px;
-  }
-
-  .coder h1 {
-    font-size: 25px;
-  }
-  .desiner h1 p {
-    font-size: 18px;
-  }
-
-  .coder h1 p {
-    font-size: 18px;
-  }
-} */
-/* --------------------------------------------------------2nd mobile resposive ========================================= */
 @media screen and (max-width: 700px) {
   header {
     display: flex;
