@@ -200,19 +200,19 @@
 
 
 
-            <div class="contact-box autoBlur">
+            <form onsubmit="sendEmail() ;reset() ; return false;" class="contact-box autoBlur">
                 <p class="input-scroll">What you're looking to build a new AI software and webites, improves your existing platform. I'm here to help.</p>
                 <p class="input-scroll">Full Name</p>
-                <input class="input-scroll" type="text" placeholder="Your Full Name">
+                <input type="text" class="input-scroll" type="text" id="name" placeholder="Your Full Name">
 
                 <p class="input-scroll">Email Address</p>
-                <input class="input-scroll" type="email" placeholder="your@gmail.com">
+                <input type="email" class="input-scroll" type="email" id="email" placeholder="your@gmail.com">
 
                 <p class="input-scroll">Your Message</p>
-                <input class="input-message input-scroll" type="text" placeholder="Share Your Thoughts...">
+                <input type="text" class="input-message input-scroll" type="text" id="message" placeholder="Share Your Thoughts...">
 
-                <button class="input-scroll"><i class='bx bx-send'> Send Message</i></button>
-            </div>
+                <button onsubmit="sendEmail() ;reset() ; return false;" type="submit" class="input-scroll"><i class='bx bx-send'> Send Message</i></button>
+            </form>
         </section>
 
         <footer id="Contact-page">
@@ -221,6 +221,7 @@
     </div>
     
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

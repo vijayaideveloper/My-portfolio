@@ -1378,7 +1378,11 @@ footer h1 {
     justify-content: none;
     gap: 0;
     position: fixed;
-    height: 30px;
+    height: 50px;
+  }
+
+  header p{
+    max-width: 200px;
   }
 
   header ul{

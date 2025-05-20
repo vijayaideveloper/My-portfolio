@@ -16,3 +16,22 @@
 //     })
 
 // })}
+
+
+
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "vijaygdhs@gmail.com",
+        Password : "CA93E3D4B654D7AB89B568CACF0A30D7EA6F",
+        To : 'aananthi9585@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "new contact enquiry",
+        Body : "Name :" +document.getElementById("name").value
+        + "Email :" +document.getElementById("email").value
+        + "Message :" +document.getElementById("message").value
+    }).then(
+  message => alert("Message sent Succesfully")
+);
+
+}
