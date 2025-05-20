@@ -1124,17 +1124,25 @@ footer h1 {
 }
 
 /*-------------------------------------------------------- MOBILE RESPONSIVE PASS --------------------------------------------------------*/
-@media screen and (max-width: 700px) and (min-width:480px) {
+/* @media screen and (max-width: 700px) and (min-width:480px) {
   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    gap: 0;
     position: fixed;
-    height: 50px;
+    height: 30px;
   }
 
-  header ul {
+  header ul{
+    display: flex;
+    width: 80%;
+    height: 20px;
+  }
+
+  .box-icons{
     display: none;
   }
-
-
 
   header h1 {
     font-size: 25px;
@@ -1187,14 +1195,14 @@ footer h1 {
     margin-left: 32px ;
   }
 
-  .hero-vid-box {
-    height: 500px;
-    top: 5%;
+.hero-vid-box {
+    height: 480px;
+    top: 8%;
     right: 5%;
   }
   .hero-vid-box video {
     position: relative;
-    height: 300px;
+    height: 280px;
   }
 
   .scroll-down{
@@ -1361,9 +1369,9 @@ footer h1 {
   .coder h1 p {
     font-size: 18px;
   }
-}
+} */
 /* --------------------------------------------------------2nd mobile resposive ========================================= */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   header {
     display: flex;
     flex-direction: column;
@@ -1435,13 +1443,13 @@ footer h1 {
   }
 
   .hero-vid-box {
-    height: 500px;
-    top: 5%;
+    height: 480px;
+    top: 8%;
     right: 5%;
   }
   .hero-vid-box video {
     position: relative;
-    height: 300px;
+    height: 280px;
   }
 
   .scroll-down{
@@ -1499,6 +1507,7 @@ footer h1 {
 
   .my-projects {
     margin-bottom: 400px;
+    gap: 5%px;
   }
 
   .project-card {
