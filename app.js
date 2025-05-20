@@ -4,6 +4,7 @@ const video3 =document.getElementById('projectVideo3');
 const hoverSign =document.querySelector(".hover-sign");
 
 const videoList = [video1, video2, video3];
+if (Array.isArray(videoList)){
 videoList.forEach(function(video){
     video.addEventListener('mouseover',function(){
         video.play();
@@ -14,4 +15,4 @@ videoList.forEach(function(video){
         hoverSign.classList.remove("active")
     })
 
-})
+})}

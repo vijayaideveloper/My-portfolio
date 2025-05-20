@@ -1180,13 +1180,13 @@ footer h1 {
   .hero-info-title {
     font-size: 14px;
     position: absolute;
-    margin-top: -540px;
+    margin-top: -510px;
     margin-left: 40px ;
   }
   .hero-info a {
     position: absolute;
-    bottom: 8%;
-    margin-left: 40px ;
+    bottom: 14%;
+    margin-left: 32px ;
   }
 
   .hero-vid-box {
@@ -1197,6 +1197,10 @@ footer h1 {
   .hero-vid-box video {
     position: relative;
     height: 300px;
+  }
+
+  .scroll-down{
+    left: 60%;
   }
   .info-section {
   display: flex;
