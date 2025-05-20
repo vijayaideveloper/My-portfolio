@@ -1124,7 +1124,7 @@ footer h1 {
 }
 
 /*-------------------------------------------------------- MOBILE RESPONSIVE PASS --------------------------------------------------------*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (min-width:480px) {
   header {
     position: fixed;
     height: 50px;
@@ -1363,15 +1363,25 @@ footer h1 {
   }
 }
 /* --------------------------------------------------------2nd mobile resposive ========================================= */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   header {
     display: flex;
     flex-direction: column;
+    justify-content: none;
+    gap: 0;
     position: fixed;
-    height: 80px;
+    height: 30px;
   }
 
+  header ul{
+    display: flex;
+    width: 80%;
+    height: 20px;
+  }
 
+  .box-icons{
+    display: none;
+  }
 
   header h1 {
     font-size: 25px;
@@ -1387,23 +1397,23 @@ footer h1 {
 
   .hero-info {
     flex-direction: column;
-    bottom: 5%;
+    bottom: 2%;
   }
 
   .scroll-down {
-    bottom: 5%;
+    bottom: 2%;
   }
 
   .hero-info h1 {
     position: relative;
     font-size: 40px;
-    margin-top: -400px;
+    margin-top: -300px;
     margin-left: 40px ;
   }
   .hero-info h1:nth-child(2){
     position: absolute;
     font-size: 40px;
-    margin-top: -460px;
+    margin-top: -360px;
     margin-left: 40px ;
   }
   .hero-p {
@@ -1415,12 +1425,12 @@ footer h1 {
   .hero-info-title {
     font-size: 14px;
     position: absolute;
-    margin-top: -510px;
+    margin-top: -400px;
     margin-left: 40px ;
   }
   .hero-info a {
     position: absolute;
-    bottom: 14%;
+    bottom: 10%;
     margin-left: 32px ;
   }
 
