@@ -1131,7 +1131,7 @@ footer h1 {
   }
 
   header ul {
-    display: none;
+    /*display: none;*/
   }
 
   header .box-icons {
